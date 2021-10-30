@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Van Cleef & Arpels</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <nav class="nav justify-content-center">
+            <section class="left">
+                <ul>
+                    <li onclick="openNav()">CREATION</li>
+                    <li>THE MASION</li>
+                </ul>
+            </section>
+            <section id="mid">
+                <h2>Van Cleef & Arpels</h2>
+            </section>
+            <section id="right">
+                <ul>
+                    <i onclick="myFunction()" class="fa fa-search" style="color: gray;"></i>
+                    <i class="fa fa-map-marker" style="color: gray;"></i>
+                    <i class="fa fa-user" style="color: gray;"></i>
+
+                </ul>
+            </section>
+            <div class="container-fluid bg-transparent px-0 py-0 h-60 " id="demo">
+                <input type="search" placeholder="Search articles,Videos,Heritage Gallery" id="searchbar">
+                <i onclick="myFunction1()" class="fa fa-times cross" aria-hidden="true"></i>
+
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <section class="left" style="margin-bottom: 30px;">
+                    <ul>
+                        <li id="left" onclick="openNav()">CREATION</li>
+                        <li id="right">THE MASION</li>
+                    </ul>
+
+                    <a href="#">High Jewelry<i class="fa fa-greater"></i></a>
+                    <a href="JewelryList.html">Jewelry</a>
+                    <a href="#">Engagement</a>
+                    <a href="#">Watches</a>
+                    <a href="#">Fragrences</a>
+                    <div class="info">
+                        <a href="ContectUs.html">Contact us</a>
+                        <a href="#">Find a boutique</a>
+                        <a href="#">Service & care</a>
+                        <a style="margin-top: 45px;" href="#">International(--)-EN</a>
+                    </div>
+            </div>
+        </nav>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="media/1st.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content1 d-flex flex-wrap justify-content-center">
+            <p>Solar flowers</p>
+        </div>
+        <div class="content2 d-flex justify-content-center">
+            <p>A garden of gold and stones.</p>
+        </div>
+        <div class="content3 d-flex justify-content-center">
+            <p class="pick">PICK A FLOWER</p>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0" id="cont1">
+
+        <div class="col 6 p-0">
+            <div class="image fade">
+                <img src="media/pd1.jpg" alt="">
+                <p>Frivole clip pendant, very large model</p>
+                <span>Yellow gold, Dimond</span>
+            </div>
+            <div class="image fade">
+                <img src="media/p2.jpg" alt="">
+                <p>Frivole clip pendant, very large model</p>
+                <span>Yellow gold, Dimond</span>
+            </div>
+            <div class="image fade">
+                <img src="media/pd3.jpg" alt="">
+                <p>Frivole clip pendant, very large model</p>
+                <span>Yellow gold, Dimond</span>
+            </div>
+            <div class="image fade">
+                <img src="media/pd4.jpg" alt="">
+                <p>Frivole clip pendant, very large model</p>
+                <span>Yellow gold, Dimond</span>
+            </div>
+            <div class="image fade">
+                <img src="media/pd5.jpg" alt="">
+                <p>Frivole clip pendant, very large model</p>
+                <span>Yellow gold, Dimond</span>
+            </div>
+            <div class="image ">
+                <img src="media/pd6.jpg" alt="">
+                <p>Frivole clip pendant, very large model</p>
+                <span>Yellow gold, Dimond</span>
+            </div>
+            <div class="image fade">
+                <img src="media/pd7.jpg" alt="">
+                <p>Frivole clip pendant, very large model</p>
+                <span>Yellow gold, Dimond</span>
+            </div>
+            <div class="image fade">
+                <img src="media/pd8.jpg" alt="">
+                <p>Frivole clip pendant, very large model</p>
+                <span>Yellow gold, Dimond</span>
+            </div>
+            <div class="image fade">
+                <img src="media/pd9.jpg" alt="">
+                <p>Frivole clip pendant, very large model</p>
+                <span>Yellow gold, Dimond</span>
+            </div>
+            <div class="image fade">
+                <img src="media/pd10.jpg" alt="">
+                <p>Frivole clip pendant, very large model</p>
+                <span>Yellow gold, Dimond</span>
+            </div>
+            <div class="dots1">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
+            <p class="pick">MORE FLORAL CREATIONS</p>
+        </div>
+        <div class="col 6 p-0">
+            <img class="img-fluid" src="media/pd11.jpg">
+        </div>
+
+    </div>
+    <div class="container-fluid px-0 ">
+        <div class="bg-img">
+            <img class="img-fluid" src="media/bimg.jpg" alt="">
+
+            <p class="content3-1"><b>Bouton d'or Ballerina clip</b></p>
+            <p class="content3-2">The art of ballet captured in motion delicacy.</p>
+            <p class="pick content3-3">JOIN THE DANCE</p>
+
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <div class="bg-img">
+            <img class="img-fluid" src="media/bimg3.jpg" alt="">
+            <p class="content4-1"><b>Florae exhibition in Paris</b></p>
+            <p class="content4-2">The Maison pays tribute to flowers with artist photographer Mika Ninagawa from
+                Sepembre 10th to November 14th at Hôtel d'Evreux, Place Vendôme, Paris.</p>
+            <p class="pick content4-3">RESERVE ONLINE</p>
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <div class="bg-img">
+            <img class="img-fluid" src="media/bimg4.jpg" alt="">
+            <p class="content5-1"><b>“Light of Flowers”<br> <br>virtual exhibition </b></p>
+            <p class="content5-2">Visit this garden set in Japan to discover the Maison's Flora universe and Atsunobu
+                Katagiri’s work</p>
+            <p class="pick content5-3">TAKE A WALK</p>
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <div class="bg-img">
+            <img class="img-fluid" src="media/bimg5.jpg" alt="">
+            <p class="content6-1"><b>Flowers, eternal inspiration</b></p>
+            <p class="content6-2">Nature, flora, and bouquets, are timeless inspirations of the Maison since its
+                creation.</p>
+            <p class="pick content6-3">WANDER AMONGST FLOWERS</p>
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <div class="bg-img">
+            <img class="img-fluid" src="media/bimg6.jpg" alt="">
+            <p class="content7-1-1"><b>Dance Reflections by </b></p>
+            <p class="content7-1-2"><b>Van Cleef & Arpels </b></p>
+            <p class="content7-2-1">A new initiative launched by the Maison </p>
+            <p class="content7-2-2">a devotee of dance ever since its origins</p>
+            <p class="pick content7-3">DISCOVER THE DEDICATED WEBSITE</p>
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <div class="bg-img">
+            <img class="img-fluid" src="media/bimg7.jpg" alt="">
+            <p class="content8-1"><b>Paris, Tokyo, New York, ...</b></p>
+            <p class="content8-2">Open the doors of our boutiques</p>
+            <p class="pick content8-3">AFTER YOU</p>
+        </div>
+    </div>
+    <div class="container-fluid px-0 creat justify-content-center">
+        <h1>Our Creations</h1>
+        <p>Discover a variety of our pieces. </p>
+        <div class="scrollmenu">
+
+            <figure class="figure border box">
+                <img src="media/img1.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center m-3">NECKLACES AND PENDANTS</figcaption>
+            </figure>
+            <figure class="figure border box">
+                <img src="media/img2.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center m-3">BRACELETS</figcaption>
+            </figure>
+            <figure class="figure border box">
+                <img src="media/img3.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center m-3">EARRINGS</figcaption>
+            </figure>
+            <figure class="figure border box">
+                <img src="media/img4.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center m-3">RINGS</figcaption>
+            </figure>
+            <figure class="figure border box">
+                <img src="media/img5.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center m-3">WATCHES</figcaption>
+            </figure>
+            <figure class="figure border box">
+                <img src="media/img6.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center m-3">CLIPS</figcaption>
+            </figure>
+            <figure class="figure border box">
+                <img src="media/img7.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center m-3">CUFFLINKS</figcaption>
+            </figure>
+
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <h3 style="text-align: center;margin:100px 0px 30px 0px;">NEWSROOM</h3>
+        <div class="row m-0 ">
+            <figure class="figure  box1">
+                <img src="media/img8.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center m-3" style="font-size: 25px; color: black; ;">Make a
+                    spring’s wind blow with Van Cleef & Arpels’ e-cards</figcaption>
+            </figure>
+            <figure class="figure  box1">
+                <img src="media/img9.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center m-3" style="font-size: 25px; color: #000;">Color in full
+                    bloom, an immersive floral experience with Alexandre Benjamin Navet and Van Cleef & Arpels
+                </figcaption>
+            </figure>
+            </figure>
+
+        </div><br><br><br><br>
+        <hr style="width:90%;margin: auto;">
+    </div>
+    <div class="cnt">
+        <div class="box2">
+            <h3>Caring for your jewelry creations</h3>
+            <p>Discover how to care for and preserve your jewelry creations over time.</p>
+            <span>CARE & SERVICE</span>
+        </div>
+        <div class="box2">
+            <h3>Our jewelry services</h3>
+            <p>Personalize, adjust or revive your jewelry creations thanks to our services offer.</p>
+            <span>JEWELRY CARE</span>
+        </div>
+        <div class="box2">
+            <h3>Our watchmaking services</h3>
+            <p>Ensure optimal maintenance of your watchmaking creations over the years.</p>
+            <span>WATCH CARE</span>
+        </div>
+    </div><br><br><br>
+    <div class="cnt2 justify-content-center">
+        <hr>
+        <br>
+        <h4>NEWSLETTER</h4>
+        <input type="text" placeholder="EMAIL ADDRESS" name="search">
+        <button type="button">SUBSCRIBE</button><br><br><br><br>
+        <hr>
+    </div><br>
+    <div class="justify-content-center d-flex">
+        <img class="logo" src="media/logo.png">
+    </div>
+    <br><br>
+    <div class="justify-content-center d-flex last">
+        <a href="#">CONTACT US</a>
+        <a href="#">SERVICE</a>
+        <a href="#">CAREER</a>
+        <a href="#">DANCE REFLECTION BY VAN CLEEF & ARPELS</a>
+        <a href="#">L'ECOLE, SCHOOL OF JEWWLRY ARTS</a>
+    </div>
+    <div class="justify-content-center d-flex last">
+        <a href="#">INSTAGRAM</a>
+        <a href="#">FACEBOOK</a>
+        <a href="#">TWITTER</a>
+        <a href="#">YOUTUBE</a>
+        <a href="#">PINTEREST</a>
+        <a href="#">LINKDIN</a>
+
+    </div>
+    <br><br><br><br>
+    <hr>
+    <div class="justify-content-center d-flex last1">
+        <a href="#">LEGAL</a>
+        <a href="#">ONLINE DISPUTE RESOLUTION</a>
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">CONDITINS OF SALES</a>
+        <a href="#">CSR POLICY</a>
+        <a href="#">SITE MAP</a>
+        <p>© Van Cleef & Arpels 2021</p>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById('demo');
+            if (x.style.display === 'none') {
+                x.style.display = 'flex';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        function myFunction1() {
+            document.getElementById('demo').style.display = "none";
+        }
+    </script>
+    <script>
+        var slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("image");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

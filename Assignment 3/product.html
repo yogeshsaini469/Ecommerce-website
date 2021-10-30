@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Document</title>
+
+    <style>
+        hr {
+            margin: 1rem 0;
+            color: inherit;
+            background-color: currentColor;
+            opacity: .10;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .caption {
+            position: -webkit-sticky;
+            position: sticky;
+            right: -50px;
+            top: 9rem;
+            bottom: 3rem;
+            margin-left: 100px;
+
+        }
+
+        .caption h3 {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .caption p {
+            font-size: 14px;
+        }
+
+        .sbtn input {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            height: 50px;
+            border: 1px solid black;
+            background: transparent;
+            cursor: pointer;
+            margin-top: 50PX;
+        }
+
+        .sbtn input:hover {
+            border: 2px solid black;
+        }
+
+        .opt ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            font-size: 14px;
+            color: rgb(97, 96, 96);
+        }
+
+        .opt ul li {
+            margin-right: 50px;
+            text-decoration: underline;
+
+        }
+
+        .details {
+            width: 80%;
+            margin: auto;
+            margin-top: 150px;
+        }
+
+        .details p {
+            text-align: center;
+            font-size: 28px;
+            padding: 20px 70px 20px 70px;
+            font-weight: bolder;
+
+
+        }
+
+        .collapsible {
+            background: none;
+            border: none;
+            display: flex;
+            margin: auto;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            display: none;
+            width: 60%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .content p {
+            padding: 0;
+            font-size: 20px;
+            text-align: left;
+            font-weight: 300;
+            font-weight: bold;
+        }
+
+        .content ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            font-size: 14px;
+            color: black;
+
+        }
+
+        .content ul li {
+            padding-right: 150px;
+
+        }
+
+        .coll h4 {
+            font-size: 14px;
+            margin-top: 40px;
+            color: gray;
+        }
+
+        .coll p {
+            font-size: 13px;
+            margin-top: 35px;
+            width: 90%;
+            font-weight: normal;
+        }
+
+        .rel {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        .rel h6 {
+            letter-spacing: 2px;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            font-weight: bold;
+
+        }
+
+        .rel a {
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-decoration: underline;
+            color: black;
+            margin-bottom: 100px;
+        }
+        .lst a{
+            font-size: 14px;
+            color: gray;
+            text-align: center;
+            margin: auto;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid px-0">
+        <nav class="nav justify-content-center ">
+            <section class="left">
+                <ul>
+                    <li onclick="openNav()">CREATION</li>
+                    <li>THE MASION</li>
+                </ul>
+            </section>
+            <section id="mid">
+                <h2>Van Cleef & Arpels</h2>
+            </section>
+            <section id="right">
+                <ul>
+                    <i onclick="myFunction()" class="fa fa-search" style="color: gray;"></i>
+                    <i class="fa fa-map-marker" style="color: gray;"></i>
+                    <i class="fa fa-user" style="color: gray;"></i>
+
+                </ul>
+            </section>
+            <div class="container-fluid bg-transparent px-0 py-0 h-60 " id="demo">
+                <input type="search" placeholder="Search articles,Videos,Heritage Gallery" id="searchbar">
+                <i onclick="myFunction1()" class="fa fa-times cross" aria-hidden="true"></i>
+
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <section class="left" style="margin-bottom: 30px;">
+                    <ul>
+                        <li id="left" onclick="openNav()">CREATION</li>
+                        <li id="right">THE MASION</li>
+                    </ul>
+
+                    <a href="#">High Jewelry<i class="fa fa-greater"></i></a>
+                    <a href="#">Jewelry</a>
+                    <a href="#">Engagement</a>
+                    <a href="#">Watches</a>
+                    <a href="#">Fragrences</a>
+                    <div class="info">
+                        <a href="#">Contact us</a>
+                        <a href="#">Find a boutique</a>
+                        <a href="#">Service & care</a>
+                        <a style="margin-top: 45px;" href="#">International(--)-EN</a>
+                    </div>
+            </div>
+        </nav>
+    </div><br> <br><br> <br><br> <br><br>
+    <div class="container-fluid  ">
+        <div class="row">
+            <div class="col-7 image px-0">
+                <img src="media/PD1/1.jpg">
+                <img src="media/PD1/2.jpg">
+                <img src="media/PD1/3.jpg">
+                <img src="media/PD1/4.jpg">
+            </div>
+            <div class="col-5 overflow-visible px-0 ">
+                <div class="caption px-0 py-0">
+                    <h3>Perlée sweet clovers ring</h3>
+                    <p>Yellow gold, Diamond </p>
+                    <div class="sbtn">
+                        <input type="submit" value="SELECT A SIZE">
+                        <br><br>
+                        <p style="color: rgb(97, 96, 96);;"><i style="font-size: 20PX;margin-right:10px;"
+                                class="fa fa-phone" aria-hidden="true"></i> CONTACT US: {PHONE}
+                        </p>
+                        <hr style="width: 70%;">
+                        <section class="opt">
+                            <ul>
+                                <li>Payment option</li>
+                                <li>Packaging &gift</li>
+                            </ul>
+                            <ul>
+                                <li>Care Advice</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <hr>
+    <div class="details">
+
+        <p>The creations in the Perlée™ clovers collection are adorned with precious clover motifs - Van Cleef &
+            Arpels' symbol of luck. They are graced by a golden bead at their center. </p>
+        <button type="button" class="collapsible">PRODUCT DETAILS<i
+                style="margin: auto; margin-left: 10px; color: gray;" class="fa fa-plus"
+                aria-hidden="true"></i></button>
+
+        <div class="content">
+            <p>Perlée sweet clovers ring, yellow gold, round diamonds; diamond quality DEF, IF to VVS. </p>
+            <hr>
+            <ul>
+                <li>REFERENCE</li>
+                <li>VCARP6MM00</li>
+            </ul>
+            <hr>
+            <ul>
+                <li>STONE</li>
+                <li style="margin-left: 30px;">STONE Diamond: 20 stones, 0.34 carat</li>
+            </ul>
+            <hr>
+            <ul>
+                <li>Size Range </li>
+                <li style="margin-left: 5px;">44 - 59 </li>
+            </ul>
+            <hr>
+            <div class="coll">
+                <h4>FIND YOUR SIZE </h4>
+                <p>Final price, actual shipping costs and applicable taxes will be reflected on your order page
+                    before you are asked to confirm and place your order. For further details, please refer to
+                    our Conditions of Sale. <br>
+                    Please note that each Van Cleef & Arpels creation is handmade. As a result, carat weight and
+                    stone quantities may differ slightly from one creation to the next.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <hr>
+    <div class="rel">
+        <h6>RELATED PIECES </h6>
+        <a href="#">COMPLETE SET</a>
+    </div> <br><br><br>
+    <br>
+    <div class=" card1">
+        <div class="crd">
+            <img src="media/PD1/releted/1.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Perlée signature ring</h5>
+            <p>Yellow gold</p>
+        </div>
+        <div class="crd">
+            <img src="media/PD1/releted/2.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Perlée diamonds bracelet, 1 row, medium model</h5>
+            <p>Yellow gold, Diamond</p>
+        </div>
+        <div class="crd">
+            <img src="media/PD1/releted/3.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Perlée signature bracelet, medium model</h5>
+            <p>Yellow gold</p>
+        </div>
+        <div class="crd">
+            <img src="media/PD1/releted/4.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Perlée diamonds ring, 1 row</h5>
+            <p>Yellow gold, Diamond</p>
+        </div>
+        <div class="crd">
+            <img src="media/PD1/releted/5.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Perlée sweet clovers bracelet, medium model</h5>
+            <p>Yellow gold, Diamond</p>
+        </div><br><br>
+    </div><br><br><br><br><br>
+    <div class="lst text-center">
+        <a href="#">SEE ALL PERLEE COLLECTION</a>
+    </div><br><br><br><br><br>
+    <div class="container-fluid px-0 py-0 text-center">
+        <hr>
+        <h6 class="m-5">HOMEPAGE / RINGS</h6>
+    </div>
+    <div class="cnt2 justify-content-center">
+        <hr>
+        <br>
+        <h4>NEWSLETTER</h4>
+        <input type="text" placeholder="EMAIL ADDRESS" name="search">
+        <button type="button">SUBSCRIBE</button><br><br><br><br>
+        <hr>
+    </div><br>
+    <div class="justify-content-center d-flex">
+        <img class="logo" src="media/logo.png">
+    </div>
+    <br><br>
+    <div class="justify-content-center d-flex last">
+        <a href="#">CONTACT US</a>
+        <a href="#">SERVICE</a>
+        <a href="#">CAREER</a>
+        <a href="#">DANCE REFLECTION BY VAN CLEEF & ARPELS</a>
+        <a href="#">L'ECOLE, SCHOOL OF JEWWLRY ARTS</a>
+    </div>
+    <div class="justify-content-center d-flex last">
+        <a href="#">INSTAGRAM</a>
+        <a href="#">FACEBOOK</a>
+        <a href="#">TWITTER</a>
+        <a href="#">YOUTUBE</a>
+        <a href="#">PINTEREST</a>
+        <a href="#">LINKDIN</a>
+
+    </div>
+    <br><br><br><br>
+    <hr>
+    <div class="justify-content-center d-flex last1">
+        <a href="#">LEGAL</a>
+        <a href="#">ONLINE DISPUTE RESOLUTION</a>
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">CONDITINS OF SALES</a>
+        <a href="#">CSR POLICY</a>
+        <a href="#">SITE MAP</a>
+        <p>© Van Cleef & Arpels 2021</p>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
